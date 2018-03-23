@@ -5,22 +5,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 <body>
     <div class="container">
         <div class="jumbotron">
+            <!-- navbar to with link to take user back to home page -->
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="./home">
                             <p class="home">
-                                <i class="fa fa-address-card-o" id="card" aria-hidden="true"></i>Home</p>
+                                    <i class="fas fa-home"> Home</i>
                         </a>
-                    </div>
                 </div>
             </nav>
             <h2>
-                <i class="fa fa-address-card-o" aria-hidden="true"></i>
                 Friend Finder Express Survey
             </h2>
             <hr class="my-4">
@@ -28,10 +28,9 @@
 
         </div>
         <div>
+            <!-- survey questions section -->
             <section>
-                <h3>
-                    <strong>About You</strong>
-                </h3>
+                <h3>About You</h3>
                 <h4>Your Name (Required)</h4>
                 <input type="text" id="name" class="form-control">
                 </h3>
@@ -190,11 +189,10 @@
     </div>
 
 
-    <!-- Modal -->
+    <!-- Modal that presents 'new best friend' to the user-->
     <div id="resultsModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
-            <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -207,7 +205,6 @@
                     <img id="matchImg" class="materialboxed" width="500" src="">
                 </div>
                 <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">New Survey</button> -->
                     <button type="button" class="btn btn-default">
                         <a href="./survey" class="modal-close" id="close">New Survey</a>
                     </button>
@@ -216,6 +213,7 @@
 
         </div>
     </div>
+    <!-- end survey questions section -->
     </section>
 
 
